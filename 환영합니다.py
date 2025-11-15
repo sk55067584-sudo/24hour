@@ -27,7 +27,6 @@ async def on_ready():
     else:
         print(f'❌ 경고: 채널 ID ({WELCOME_CHANNEL_ID})를 찾을 수 없습니다. ID를 확인하세요.')
 
-
 @client.event
 async def on_member_join(member):
     """새로운 멤버가 서버에 들어올 때 실행됩니다."""
@@ -60,4 +59,5 @@ async def on_member_join(member):
         print(f'❌ {member.name} 님이 입장했지만, 유효한 채널 ID가 없어 메시지를 보내지 못했습니다.')
 
 # 봇을 실행합니다.
+
 client.run("MTQzODc5NjkzNDM3NzY0MDAyOQ.GcZPFf.5rLeV-h3wUObAmyncMRiZfr1aHErawjrEkX1Bs")
